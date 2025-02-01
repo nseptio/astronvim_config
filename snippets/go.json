@@ -1,0 +1,44 @@
+{
+  "Go Main Function": {
+    "prefix": "main",
+    "body": [
+      "package main",
+      "",
+      "import (",
+      "\t\"fmt\"",
+      ")",
+      "",
+      "func main() {",
+      "\t$1 // TODO: Add your logic here",
+      "}"
+    ],
+    "description": "Main function scaffold"
+  },
+  "Error Handling": {
+    "prefix": "iferr",
+    "body": [
+      "if err != nil {",
+      "\treturn $1, fmt.Errorf(\"$2: %w\", err)",
+      "}"
+    ],
+    "description": "Error handling block with error wrapping"
+  },
+  "Go Function": {
+    "prefix": "gofunc",
+    "body": [
+      "func $1($2) $3 {",
+      "\t$4",
+      "}"
+    ],
+    "description": "Go function scaffold"
+  },
+  "Go Test Function": {
+    "prefix": "testfunc",
+    "body": [
+      "func Test$1(t *testing.T) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "Go test function"
+  }
+}
