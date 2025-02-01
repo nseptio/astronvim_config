@@ -31,7 +31,9 @@ return {
   -- { import = "astrocommunity.completion.cmp-latex-symbols" },
   -- editing-support
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
-  { import = "astrocommunity.editing-support.auto-save-nvim" },
+  -- { import = "astrocommunity.editing-support.auto-save-nvim" },
+
+  { import = "astrocommunity.utility.noice-nvim" },
 
   -- diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
