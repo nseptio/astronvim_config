@@ -58,11 +58,15 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.svelte" },
+  { import = "astrocommunity.pack.godot" },
 
   -- media
   { import = "astrocommunity.media.codesnap-nvim" },
-  -- { import = "astrocommunity.media.image-nvim" },
+  { import = "astrocommunity.media.image-nvim" },
 
+  { import = "astrocommunity.game.leetcode-nvim" },
+
+  { import = "astrocommunity.editing-support.cutlass-nvim" },
   -- terminal
   { import = "astrocommunity.docker.lazydocker" },
 
