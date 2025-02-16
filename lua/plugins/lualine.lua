@@ -35,7 +35,7 @@ return {
         section_separators = { left = "", right = "" },
       },
       sections = {
-        lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
+        lualine_a = { { "mode", separator = { left = " " }, right_padding = 2 } },
         lualine_b = {
           {
             function()
@@ -98,8 +98,8 @@ return {
             cond = conditions.hide_in_width,
           },
         },
-        lualine_y = { { "filetype", color = { gui = "bold" } } , {"progress", color = { gui = 'bold' }}},
-        lualine_z = { { "location", separator = { right = "" }, left_padding = 2 } },
+        lualine_y = { { "filetype", color = { gui = "bold" } }, { "progress", color = { gui = "bold" } } },
+        lualine_z = { { "location", separator = { right = " " }, left_padding = 2 } },
       },
       inactive_sections = {
         lualine_a = { "filename" },

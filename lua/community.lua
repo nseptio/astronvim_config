@@ -27,6 +27,7 @@ return {
   { import = "astrocommunity.colorscheme.melange-nvim" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
   -- cmp
   -- { import = "astrocommunity.completion.cmp-latex-symbols" },
   -- editing-support
@@ -51,7 +52,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
+  -- { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
@@ -59,7 +60,7 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.godot" },
-
+  { import = "astrocommunity.lsp.nvim-java" },
   -- media
   { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.media.image-nvim" },
@@ -72,10 +73,13 @@ return {
 
   -- code-runner
   -- { import = "astrocommunity.code-runner.compiler-nvim" },
-  { import = "astrocommunity.code-runner.sniprun" },
+  -- { import = "astrocommunity.code-runner.sniprun" },
 
   -- indent
-  -- { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.indent.mini-indentscope" },
+
+  -- util
   { import = "astrocommunity.editing-support.suda-vim" },
   --
   -- search

@@ -2,6 +2,7 @@ return {
   "akinsho/bufferline.nvim",
   dependencies = {
     { import = "astrocommunity.recipes.disable-tabline" }, -- dependency before loading rest of the spec
+    { "AstroNvim/astroui", opts = { icons = { Bufferline = "󰨖" } } },
     {
       "AstroNvim/astrocore",
       opts = {
@@ -17,6 +18,9 @@ return {
             ["<b"] = {
               function() require("bufferline.commands").move(-vim.v.count1) end,
               desc = "Move buffer tab left",
+            },
+            ["<Leader>b"] = {
+              desc = require("astroui").get_icon("Bufferline", 1, true) .. "󰨖 Bufferline",
             },
             ["<Leader>bb"] = {
               function() require("bufferline.commands").pick() end,
