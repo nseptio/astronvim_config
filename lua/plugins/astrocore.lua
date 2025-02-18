@@ -43,14 +43,6 @@ return {
       -- first key is the mode
       n = {
         -- second key is the lefthand side of the map
-        ["<leader>D"] = { name = "+Cord" }, -- Group all Cord commands under <leader>D
-        ["<leader>De"] = { ":Cord enable<CR>", desc = "Enable presence" },
-        ["<leader>Dd"] = { ":Cord disable<CR>", desc = "Disable presence" },
-        ["<leader>Dt"] = { ":Cord toggle<CR>", desc = "Toggle presence" },
-        ["<leader>Di"] = { ":Cord idle toggle<CR>", desc = "Toggle idle state" },
-        ["<leader>Df"] = { ":Cord idle force<CR>", desc = "Force idle state" },
-        ["<leader>Ds"] = { ":Cord status<CR>", desc = "Show connection status" },
-
         -- navigate buffer tabs
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
